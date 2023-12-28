@@ -8,7 +8,7 @@ output_folder = "videos"
 sg.theme('DarkAmber')
 
 layout = [
-    [sg.Text('Insira o link do vídeo do YouTube, abaixo:')],
+    [sg.Text('Insira o link do vídeo do YouTube:')],
     [sg.Input(key='link_video', size=(50, 10), background_color='white', text_color='black')],
     [sg.Button('Baixar', size=(50, 3), button_color=("black", "green"))]
 ]
