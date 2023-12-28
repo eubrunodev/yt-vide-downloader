@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 from pytube import YouTube
 import os
 
-# Cria a pasta "musics" na raiz do projeto, se não existir
+
 output_folder = "videos"
 
 sg.theme('DarkAmber')
@@ -29,14 +29,14 @@ while True:
             video = YouTube(link_do_video)
             stream = video.streams.get_highest_resolution()
 
-            # Define o caminho completo do arquivo, combinando a pasta e o nome do vídeo
+
             output_path = os.path.join(output_folder, f"{video.title}.mp4")
 
-            # Baixa o vídeo e salva no caminho especificado
+
             stream.download(output_path)
             
             print("Download concluído com sucesso!")
-            # Limpa o campo de entrada
+
             window["link_video"].update("")
         except Exception as e:
             print(f"Ocorreu um erro: {e}")
