@@ -1,2 +1,5 @@
 ./videos
 videos
+./dist*
+/dist*
+downloader.spec

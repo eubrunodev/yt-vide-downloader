@@ -8,13 +8,16 @@ output_folder = "videos"
 sg.theme('DarkAmber')
 
 layout = [
+    [sg.Text('BRN - YOUTUBE VIDEO DOWNLOADER')],
     [sg.Text('Insira o link do vídeo do YouTube:')],
     [sg.Input(key='link_video', size=(50, 10), background_color='white', text_color='black')],
-    [sg.Button('Baixar', size=(50, 3), button_color=("black", "green"))]
+    [sg.Button('Baixar', size=(50, 3), button_color=("black", "green"))],
+        [sg.Text('Download Status')],
+    [sg.Text('', key="status_message")]
 ]
 
 
-window = sg.Window('Video Downloader', layout=layout, font='arial')
+window = sg.Window('YouTube Video Downloader 1.0', layout=layout, font='arial')
 
 
 while True:
@@ -35,7 +38,7 @@ while True:
 
             stream.download(output_path)
             
-            print("Download concluído com sucesso!")
+            window["status_message"].update("Download completo", text_color="green")
 
             window["link_video"].update("")
         except Exception as e:
