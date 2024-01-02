@@ -14,3 +14,6 @@ Antes de começar, certifique-se de ter o Python instalado em seu sistema. Você
 
    ```bash
    pip install pyinstaller
+3. Abra o terminal (cmd) e execute o seguinte comando para tornar o script um arquivo executável:
+   ```bash
+   pyinstaller --onefile -w downloader.py
