@@ -17,7 +17,7 @@ layout = [
 ]
 
 
-window = sg.Window('YouTube Video Downloader 1.0', layout=layout, font='arial')
+window = sg.Window('1.0.1', layout=layout, font='arial')
 
 
 while True:
