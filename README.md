@@ -1,5 +1,3 @@
-# APLICATIVO DESCONTINUADO! LIB PYSIMPLEGUI VIROU PAGA
-
 Este é um script simples em Python para baixar vídeos do YouTube. Antes de torná-lo um arquivo executável, siga as instruções abaixo:
 
 ## Pré-requisitos
